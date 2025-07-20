@@ -145,6 +145,8 @@ main a::after{
 
 main > img {
     width: 100%;
+    height: auto;
+    display: block;
 }
 
 div.video{
