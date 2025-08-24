@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <main>
+    <div class="container"> <!--ativa o display flex-->
+
+      <!--bloco com a nota geral do resultado-->
+      <section class="resultado">
+        <h2>Your Result</h2>
+        <div class="nota">
+          <h2>76</h2>
+          <span>of 100</span>
+        </div>
+        <h3>Great</h3>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
+      </section>
+
+      <!--sumario mostrando cada nota para o calculo da media-->
+      <section class="sumary">
+        <h2>Summary</h2>
+        
+          <p class="reacao fundos-notas">
+            <span>
+              <img src="images/icon-reaction.svg" alt="">
+              Reaction</span>
+            <span class="sumary-resultados">80 / 100</span>
+    
+          <p class="memoria fundos-notas">
+            <span>
+              <img src="images/icon-memory.svg" alt="">
+              Memory</span>
+            <span class="sumary-resultados">92 / 100</span>
+          </p>
+
+          <p class="verbal fundos-notas">
+            <span>
+              <img src="images/icon-verbal.svg" alt="">
+              Verbal</span>
+            <span class="sumary-resultados">61 / 100</span>
+          </p>
+
+        <p class="visual fundos-notas">
+          <span>
+            <img src="images/icon-visual.svg" alt="">
+            Visual</span>
+          <span class="sumary-resultados">72 / 100</span>
+        </p>
+
+        <!--caixa para personalizar o botão-->
+        <p class="botao">Continue</p>
+      </section>
+    </div>
+    
+       
+  </main>
+  
+
+</body>
+</html>

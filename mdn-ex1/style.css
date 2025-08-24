@@ -1,0 +1,48 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: hotpink;
+    font-size: 40px;
+    border-bottom: 10px dotted purple;
+}
+
+h2{
+    color: #919191;
+    font: 800;
+}
+
+footer > h2 {
+    color: rgb(34, 34, 34);
+    font-size: 2.2em;
+}
+
+ul{
+    border: solid 5px #8e009b;
+    background-color: #eeeeee; 
+}
+
+li{
+    padding: 3px;
+}
+
+.email{
+    color: green;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: #fb6542;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+p{
+    font-size: 19px;
+}

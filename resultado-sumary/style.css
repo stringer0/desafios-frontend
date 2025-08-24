@@ -1,0 +1,178 @@
+@charset "Utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+
+    /*cores primarias*/
+    
+    --cor1: rgb(255, 87, 87);
+    --cor2: rgb(255, 176, 31);
+    --cor3: rgb(0, 189, 145);
+    --cor4: rgb(17, 37, 212);
+
+   /*fontes*/
+
+   --corpo: "Hanken Grotesk", sans-serif;
+}
+/*configs gerais*/
+body{
+    font-family: var(--corpo);
+    background-color: hsl(221, 100%, 96%);
+}
+
+main{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    font-size: 40px;
+    margin: 0;
+}
+
+/*bloco das sections*/
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 30px;
+    flex: 1;
+    gap: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 800px;
+    min-height: 630px;
+    padding-right: 15px;
+}
+
+/*bloco das notas*/
+.resultado{
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 30px;
+    padding: 15px;
+    color: white;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+.resultado > p{
+    text-align: center;
+}
+
+/*caixa do circulo*/
+.nota{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    background-image: linear-gradient(to top, hsla(241, 72%, 46%, 0), hsl(256, 85%, 47%));
+    border-radius: 100%;
+    margin: 0;
+}
+
+.nota > h2{
+    font-size: 60px;
+    margin: 0px;
+}
+
+/*sumario com as notas*/
+.sumary{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    width: 90%;
+    height: 600px;
+}
+
+.sumary > h2{
+        color: hsl(224, 30%, 27%);
+        font-weight: 700;
+    }
+
+img{
+    vertical-align: middle;
+    height: 20px;
+   } 
+
+.sumary-resultados{
+    font-weight: 700;
+    color: hsl(224, 30%, 27%);
+}
+   
+/*criar classe item */
+.fundos-notas{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+/*notas dentro do sumary*/ 
+.reacao{
+    background-color: #FFF4F8;
+    color: hsl(0, 100%, 67%);
+}
+
+.memoria{
+    background-color: #FFFBF1;
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal{
+    background-color: #F2FDF9;
+    color: hsl(166, 100%, 37%);
+}
+
+.visual{
+    background-color: #F4F4FE;
+    color: hsl(234, 85%, 45%);
+}
+
+
+/*botão de contiuar*/
+.botao{
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    text-align: center;
+    border-radius: 30px;
+    padding: 15px 0px;
+    margin: 10px;
+    cursor: pointer;   
+}
+
+/*animação do botão*/
+.botao:hover{
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 65%), hsl(241, 81%, 54%));
+}
+
+/*regra para dispositivos com tela menor*/
+@media (max-width:600px)  {
+     .resultado{
+        border-top-left-radius:0;
+        border-top-right-radius: 0;
+    }
+    .container{
+        flex-direction: column;
+        border-radius: 0;
+        min-height: 100vh;
+        padding-right: 0;
+    }
+    body{
+        margin: 0;
+    }
+
+    h3{
+        font-size: 28px; /*sugestão da IA para tornar o codigo mais limpo em telas menores pois o h3 pode ficar muito grande com a definição anterior*/
+    }
+}
