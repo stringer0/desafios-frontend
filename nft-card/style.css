@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+    /*cores primarias*/
+
+    --cor1: hsl(215, 51%, 70%);
+    --cor2: hsl(178, 100%, 50%);
+    --cor3: hsl(217, 54%, 11%);
+
+    /*fonte*/
+    --fonte: "Outfit", sans-serif;
+}
+
+body{
+    background-color: var(--cor3);
+    font-family: var(--fonte);
+}
+
+#principal-img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+h1{
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+h1:hover{
+    color: var(--cor2);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+a:hover{
+    color: var(--cor2);
+}
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+section{
+    background-color: hsl(216, 50%, 16%);
+    max-width: 300px;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+hr{
+    border-color: var(--cor1);
+}
+
+
+.usuario  img{
+    width: 25px;
+    vertical-align: middle;
+    border: solid white 1px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.normal-text{
+    color: var(--cor1);
+}
+
+.eth{
+    color: var(--cor2);
+    display: flex;
+    justify-content: space-between;
+}
+
+.eth img{
+    padding: 3px;
+    vertical-align: sub;
+}
+
+.img-block{
+    position: relative;
+    border-radius: 20px;
+    height: 300px;
+}
+
+.invi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: hsl(178deg 100% 50% / 31%);
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.invi:hover{
+    opacity: 1;
+}

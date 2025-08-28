@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <section>
+
+      <!--div para manter o overlay dentro da imagem-->
+      <div class="img-block">
+
+        <img id="principal-img" src="images/image-equilibrium.jpg" alt="um cubo escuro">
+        
+        <!--classe para o overlay-->
+        <div class="invi">
+          <img  src="images/icon-view.svg" alt="">
+        </div>
+
+      </div>
+
+      <h1>Equilibrium #3429</h1>
+
+      <p class="normal-text">Our Equilibrium collection promotes balance and calm.</p>
+
+      <!--P usando span para pode separar os textos em distancias iguais usando display flex-->
+      <p class="eth">
+        <span>
+          <img src="images/icon-ethereum.svg" alt="">
+          0.041 ETH
+        </span>
+
+        <span class="normal-text">
+          <img src="images/icon-clock.svg" alt="">
+          3 days left
+        </span>
+
+      </p>
+
+      <hr>
+
+      <!--classe criada para poder atacar somente a imagem do usuario e fazer configurações especificas para está parte-->
+      <div class="usuario">
+
+        <p class="normal-text">
+          <img src="images/image-avatar.png" alt="">
+          Creation of
+          <a href="">Jules Wyvern</a>
+        </p>
+
+      </div>
+
+    </section>
+
+  </div>
+</body>
+</html>

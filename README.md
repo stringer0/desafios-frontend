@@ -11,3 +11,6 @@
 <a href= 'https://stringer0.github.io/desafios-frontend/receita/index.html'>site receita</a>
 
 <a href= 'https://stringer0.github.io/desafios-frontend/resultado-sumary/index.html'>sumario do front-end mentor</a>
+
+
+<a href= 'https://stringer0.github.io/desafios-frontend/nft-card/index.html'>desafio card-nft</a>
