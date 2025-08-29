@@ -26,11 +26,17 @@ body{
     height: 100vh;
 }
 
+@media (max-width: 500px){
+    body{
+        background-image: url("images/pattern-background-mobile.svg");
+    }
+}
+
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 main{
@@ -92,7 +98,7 @@ h1{
     display: flex;
     align-items: center;
     gap: 15px;
-    width: 45px;
+    
     padding: 10px;
 }
 
